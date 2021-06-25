@@ -5,13 +5,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 module.exports = {
   title: "Inception Outline",
   tagline: "このサイトはDocusaurusで作りました。",
-  url: "https://nakamo326.guthub.io",
-  baseUrl: "/inception_outline/",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "nakamo326", // Usually your GitHub org/user name.
-  projectName: "inception_outline", // Usually your repo name.
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Inception Outline",
