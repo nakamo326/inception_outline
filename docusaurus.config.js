@@ -5,8 +5,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 module.exports = {
   title: "Inception Outline",
   tagline: "このサイトはDocusaurusで作りました。",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/doc/",
+  url: "https://nakamo326.github.io/",
+  baseUrl: "/inception_outline/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
