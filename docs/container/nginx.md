@@ -18,12 +18,12 @@ eval "echo \"$(cat template.conf)\"" > config.conf
 
 docker-compose.ymlからビルド時にオプションargsで環境変数を渡すことで、.envファイルのみで公開したくない情報の管理が行える。
 
-同様の処理を行うコマンドにenvsubstなどがある。
+同様の処理を行うコマンドに `envsubst` などがある。
 
 
 ### mkcert
 
-今回はsslの自己証明書の発行にmkcertを利用。
+今回はsslの自己証明書の発行に `mkcert` を利用。
 
 host上でブラウザからアクセスしたときの警告が出ないかも。
 

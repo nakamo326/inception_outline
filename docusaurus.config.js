@@ -6,12 +6,12 @@ module.exports = {
   title: "Inception Outline",
   tagline: "このサイトはDocusaurusで作りました。",
   url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  baseUrl: "/doc/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "ynakamot", // Usually your GitHub org/user name.
+  projectName: "inception_outline", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Inception Outline",
