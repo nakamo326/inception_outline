@@ -10,7 +10,7 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "ynakamot", // Usually your GitHub org/user name.
+  organizationName: "nakamo326", // Usually your GitHub org/user name.
   projectName: "inception_outline", // Usually your repo name.
   themeConfig: {
     navbar: {
