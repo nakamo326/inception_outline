@@ -20,6 +20,7 @@ sidebar_position: 2
 		- network: host, network: --link, linksの使用は禁止
 		- networkはdocker-compose.yml内に明示される必要がある
 - コンテナはクラッシュしたとき再起動する必要がある
+	- `docker-compose service-name kill 1` でコンテナ終了、`docker ps` で再起動が確認できる。
 - コンテナは無限ループを含むコマンドで開始してはいけない。（tail -f, bash, sleep, while true）
 - volumeは/home/login/data内に作成する。
 - ローカルIPをにリダイレクトするドメインネームを設定する。（login.42.fr: loginは各自のログイン名）
