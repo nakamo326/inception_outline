@@ -10,11 +10,25 @@ webからphpがリクエストされるとnginxサービスからport9000番を�
 
 ### wp-config
 
-wp-config.phpはボリューム内に設置されているため、ビルド時に設定できない。
+~~wp-config.phpはボリューム内に設置されているため、ビルド時に設定できない。~~
 
-そのため、CMDからphp-fpmを起動する前にwp-config.phpに環境変数を埋め込んで、ボリューム内にコピーするシェルスクリプトを設定した。（正解かどうかは分からないです。）
+~~そのため、CMDからphp-fpmを起動する前にwp-config.phpに環境変数を埋め込んで、ボリューム内にコピーするシェルスクリプトを設定した。（正解かどうかは分からないです。）~~
 
-環境変数の展開はNGINXコンテナのビルド時と同様、run時にスクリプトが走るのでdocker-compose.yml内environment: で環境変数を設定。
+~~環境変数の展開はNGINXコンテナのビルド時と同様、run時にスクリプトが走るのでdocker-compose.yml内environment: で環境変数を設定。~~
+
+```docker-compose
+volumes:
+    wordpress-vol:
+        driver: local
+        driver_opts:
+            type : none
+            o: bind
+            device: /home/ynakamot/data/wordpress
+```
+
+上記のように名前付きボリュームでバインドマウントを行うことで、ボリューム作成時にコンテナの内容をホストにコピーすることができる。
+
+参考: [How to set a path on host for a named volume in docker-compose.yml](https://stackoverflow.com/questions/36387032/how-to-set-a-path-on-host-for-a-named-volume-in-docker-compose-yml)
 
 ### PHP-module
 
