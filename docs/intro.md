@@ -10,13 +10,21 @@ Inceptionは、**docker-compose**を使いwebアプリケーションサービ�
 
 **docker-compose**とは、dockerfileからビルドされたコンテナの挙動や連携を設定し、複数のコンテナから一つのサービスを構築するツールです。
 
-これらの設定は、**docker-compose.yml**に記載されます。
+これらの設定は、[**docker-compose.yml**](docker-compose.md)に記載されます。
 
-Inceptionでは、**nginx**、**wordpress**、**php-fpm**、**mariadb**が稼働するコンテナを設定し、web上からアクセスできるwordpressサービスを構築します。
-<!-- それぞれリンクはる
-e.g. [new.docusaurus.io](https://new.docusaurus.io)
--->
+Inceptionでは、[**nginx**](container/nginx.md)、[**wordpress**、**php-fpm**](container/wordpress_php.md)、[**mariadb**](container/mariadb.md)が稼働するコンテナを設定し、web上からアクセスできるwordpressサービスを構築します。
 
+## 動作を確認した環境
+
+今回は下記の環境で動作を確認しました。
+
+```
+➜ ~ docker --version
+Docker version 20.10.2, build 20.10.2-0ubuntu1~18.04.2
+➜ ~ docker-compose --version
+docker-compose version 1.29.2, build 5becea4c
+
+```
 
 ## Installation
 
