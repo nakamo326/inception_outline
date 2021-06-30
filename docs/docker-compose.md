@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'docker-compose.yml'
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ## Tips
