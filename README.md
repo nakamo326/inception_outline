@@ -1,5 +1,6 @@
-# Website
+# What is this?
 
+This website is made for Inception,assignment of 42Tokyo. contained small tips to construct wordpress service with docker-compose.\
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
